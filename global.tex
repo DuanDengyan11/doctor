@@ -1,0 +1,163 @@
+\iffalse
+  % 本块代码被上方的 iffalse 注释掉，如需使用，请改为 iftrue
+  % 使用 Noto 字体替换中文宋体、黑体
+  \setCJKfamilyfont{\CJKrmdefault}[BoldFont=Noto Serif CJK SC Bold]{Noto Serif CJK SC}
+  \renewcommand\songti{\CJKfamily{\CJKrmdefault}}
+  \setCJKfamilyfont{\CJKsfdefault}[BoldFont=Noto Sans CJK SC Bold]{Noto Sans CJK SC Medium}
+  \renewcommand\heiti{\CJKfamily{\CJKsfdefault}}
+\fi
+
+\iffalse
+  % 本块代码被上方的 iffalse 注释掉，如需使用，请改为 iftrue
+  % 在 XeLaTeX + ctexbook 环境下使用 Noto 日文字体
+  \setCJKfamilyfont{mc}[BoldFont=Noto Serif CJK JP Bold]{Noto Serif CJK JP}
+  \newcommand\mcfamily{\CJKfamily{mc}}
+  \setCJKfamilyfont{gt}[BoldFont=Noto Sans CJK JP Bold]{Noto Sans CJK JP}
+  \newcommand\gtfamily{\CJKfamily{gt}}
+\fi
+
+
+% 设置基本文档信息，\linebreak 前面不要有空格，否则在无需换行的场合，中文之间的空格无法消除
+\nuaaset{
+  thesisid = {},   % 论文编号
+  title = {直升机协同吊挂控制技术研究},
+  % title={基于功率消耗和鲁棒自适应博弈控制的负载分配策略}
+  author = {段登燕},
+  college = {航空学院},
+  advisers = {李建波\quad 研究员},
+  % applydate = {二〇一八年六月}  % 默认当前日期
+  %
+  % 本科
+  major = {\LaTeX{} 科学与技术},
+  studentid = {131810299},
+  classid = {应用技术},           % 班级的名称
+  industrialadvisers = {Jack Ma}, % 企业导师，若无请删除或注释本行
+  % 硕/博士
+  majorsubject = {航空宇航科学与技术},
+  researchfield = {飞行力学与控制},
+  libraryclassid = {V221},       % 中图分类号
+  subjectclassid = {082501},      % 学科分类号
+}
+\nuaasetEn{
+  title = {Research on control techonology of multi-lift system with helicopters carrying load cooperatively},
+  author = {Duan Dengyan},
+  college = {College of Aerospace Engineering},
+  majorsubject = {Aerospace Science and Technology},
+  advisers = {Prof.Li Jianbo},
+  degreefull = {Doctor of Philosophy},
+  % applydate = {June, 8012}
+}
+
+% 摘要
+\begin{abstract}
+本文介绍如何使用\nuaathesis{} 文档类撰写南京航空航天大学学位论文。
+
+首先介绍如何获取并编译本文档，然后展示论文部件的实例，最后列举部分常用宏包的使用方法。
+\end{abstract}
+\keywords{学位论文, 模板, \nuaathesis}
+
+\begin{abstractEn}
+This document introduces \nuaathesis, the \LaTeX{} document class for NUAA Thesis.
+
+First, we show how to get the source code and compile this document.
+Then we provide snippets for figures, tables, equations, etc.
+Finally we enforce some usage patterns.
+\end{abstractEn}
+\keywordsEn{NUAA thesis, document class, space is accepted here}
+
+
+% 请按自己的论文排版需求，随意修改以下全局设置
+\usepackage{cases}
+\usepackage{hyperref}
+\usepackage{color, soul}
+\usepackage[utf8]{inputenc}
+\usepackage{subfig}
+\usepackage{rotating}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{decorations.pathreplacing, calligraphy}
+\usetikzlibrary{quotes,angles}
+\usetikzlibrary{shapes.geometric,arrows}
+\usetikzlibrary{fit}
+\usetikzlibrary{backgrounds}
+
+\tikzstyle{arrow}     = [thick,->,>=stealth]
+\tikzstyle{arrow_double}  = [thick,<->,>=stealth]
+\tikzstyle{startstop} = [rectangle, rounded corners, minimum width=2.5cm, minimum height=1cm, text centered, draw=black, fill=green!30, align = center, font = \fontsize{10}{10}\selectfont]
+\tikzstyle{process} = [rectangle, rounded corners, text centered, draw = black, minimum width = 2.5cm, minimum height = 1cm, align = center, font = \fontsize{10}{10}\selectfont]
+\tikzstyle{process_red} = [rectangle, rounded corners, text centered, draw = black, minimum width = 2.5cm, minimum height = 1cm, fill = red!30, align = center, font = \fontsize{10}{10}\selectfont]
+\tikzstyle{process_orange} = [rectangle, rounded corners, text centered, draw = black, minimum width = 2.5cm, minimum height = 1cm, fill = orange!30, align = center, font = \fontsize{10}{10}\selectfont]
+\tikzstyle{process_blue} = [rectangle, rounded corners, text centered, draw = black, minimum width = 2.5cm, minimum height = 1cm, fill = blue!30, align = center, font = \fontsize{10}{10}\selectfont]
+\tikzstyle{process_green} = [rectangle, rounded corners, text centered, draw = black, minimum width = 2.5cm, minimum height = 1cm, fill = green!30, align = center, font = \fontsize{10}{10}\selectfont]
+\tikzstyle{process_purple} = [rectangle, rounded corners, text centered, draw = black, minimum width = 2.5cm, minimum height = 1cm, fill = purple!20, align = center, font = \fontsize{10}{10}\selectfont]
+\tikzstyle{decision}  = [diamond,shape aspect=2.5, minimum width=3cm, minimum height=1cm, inner xsep=0,text centered, draw=black, fill=red!30, align = center, font = \fontsize{10}{10}\selectfont]
+\tikzstyle{text_me} = [font = \fontsize{10}{10}\selectfont]
+
+\tikzset{global scale/.style={
+    scale=#1,
+    every node/.append style={scale=#1}
+  }
+}
+
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.16}
+\pgfplotsset{
+  table/search path={./fig/},
+}
+\usepackage{ifthen}
+\usepackage{longtable}
+\usepackage{siunitx}
+\usepackage{listings}
+\usepackage{multirow}
+\usepackage{pifont}
+\usepackage{gensymb}
+\usepackage{bm}
+
+\lstdefinestyle{lstStyleBase}{%
+  basicstyle=\small\ttfamily,
+  aboveskip=\medskipamount,
+  belowskip=\medskipamount,
+  lineskip=0pt,
+  boxpos=c,
+  showlines=false,
+  extendedchars=true,
+  upquote=true,
+  tabsize=2,
+  showtabs=false,
+  showspaces=false,
+  showstringspaces=false,
+  numbers=left,
+  numberstyle=\footnotesize,
+  linewidth=\linewidth,
+  xleftmargin=\parindent,
+  xrightmargin=0pt,
+  resetmargins=false,
+  breaklines=true,
+  breakatwhitespace=false,
+  breakindent=0pt,
+  breakautoindent=true,
+  columns=flexible,
+  keepspaces=true,
+  framesep=3pt,
+  rulesep=2pt,
+  framerule=1pt,
+  backgroundcolor=\color{red!10},
+  stringstyle=\color{green!40!black!100},
+  keywordstyle=\bfseries\color{blue!50!black},
+  commentstyle=\slshape\color{black!60}}
+
+
+
+%\usetikzlibrary{external}
+%\tikzexternalize % activate!
+
+\newcommand\cs[1]{\texttt{\textbackslash#1}}
+\newcommand\pkg[1]{\texttt{#1}\textsuperscript{PKG}}
+\newcommand\env[1]{\texttt{#1}}
+
+\theoremstyle{nuaaplain}
+\nuaatheoremchapu{definition}{定义}
+\nuaatheoremchapu{assumption}{假设}
+\nuaatheoremchap{exercise}{练习}
+\nuaatheoremchap{nonsense}{胡诌}
+\nuaatheoremg[句]{lines}{句子}

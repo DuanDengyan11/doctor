@@ -1,0 +1,36 @@
+
+\begin{tikzpicture}
+    \draw (0,0) ellipse (3 and 2.8 );%画椭圆 
+    \draw (0,0) ellipse (3 and 0.8) node[xshift = 1cm,yshift = -1cm]{赤道};%画椭圆 
+    \draw (0,2.8) .. controls (-2, 1.5) and (-2,-1.5) .. (0,-2.8) node[left,xshift = -1.2cm, yshift = 4.5cm] {本初} node[left,xshift = -1.2cm, yshift = 4cm] {子午线};
+    \draw[-latex] (0,0) -- (3.7,0) node[above] {$Y_{ECEF}$}; 
+    \draw[-latex] (0,0) -- (0,3.5) node[right] {$Z_{ECEF}$} node[left, yshift = -0.5cm]{北极}; 
+    \draw[-latex] (0,0) -- (-2.0,-1.0) node[below] {$X_{ECEF}$}; 
+    \draw [green](-0.8,-0.4) -- (-0.8, 1.2);
+    \draw [green](-0.8,1.2) -- (1.2, 1.2);
+    \draw [green](1.2,1.2) -- (1.2, -0.4);
+    \draw [green](1.2,-0.4) -- (2.0, 0);
+    \draw [green](2.0, 0) -- (2.0, 1.6);
+    \draw [green](2.0, 1.6) -- (0.0, 1.6);
+    \draw [green](0.0, 1.6) -- (-0.8, 1.2); 
+    \draw [green](-0.8,-0.4) -- (1.2, -0.4); 
+    \draw [green](2.0, 1.6) -- (1.2, 1.2); 
+    \draw[decorate,decoration={brace,amplitude=3mm},red] (0,0) -- (0,2.8) node[black,midway, xshift = -0.5cm] {$R_{b}$};
+    \draw[decorate,decoration={brace,amplitude=3mm},red] (0,0) -- (3,0) node[black,midway,yshift = 0.5cm] {$R_{a}$};
+    \draw [blue](0.0, 0) -- (1.2, -0.4);
+    \draw [blue](0.3, -0.1) -- (1.25, 1.25);
+    \draw
+    (1.2, -0.4) coordinate (a)
+    (0.3, -0.1) coordinate (b)
+    (1.25, 1.25) coordinate (c)
+    pic["$\varphi$", draw=orange, ->, angle eccentricity=1.2, angle radius=0.6cm]
+    {angle=a--b--c};
+    \draw
+    (-2.0, -1.0) coordinate (a)
+    (0.0, 0.0) coordinate (b)
+    (1.2, -0.4) coordinate (c)
+    pic["$\gamma$", draw=orange, ->, angle eccentricity=1.5, angle radius=0.3cm]
+    {angle=a--b--c}; 
+\end{tikzpicture}  
+
+

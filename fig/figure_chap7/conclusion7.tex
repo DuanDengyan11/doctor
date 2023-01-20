@@ -1,0 +1,97 @@
+
+% \documentclass{article}
+% \usepackage{xeCJK}
+% \usepackage{tikz}
+% \usetikzlibrary{shapes.geometric,arrows}
+% \usetikzlibrary{fit}
+% \usetikzlibrary{backgrounds}
+
+% \tikzstyle{arrow}     = [thick,->,>=stealth]
+% \tikzstyle{arrow_double}  = [thick,<->,>=stealth]
+% \tikzstyle{startstop} = [rectangle, rounded corners, minimum width=2.5cm, minimum height=1cm, text centered, draw=black, fill=green!30]
+% \tikzstyle{process} = [rectangle, rounded corners, text centered, draw = black, minimum width = 2.5cm, minimum height = 1cm]
+% \tikzstyle{process_red} = [rectangle, rounded corners, text centered, draw = black, minimum width = 2.5cm, minimum height = 1cm, fill = red!30]
+% \tikzstyle{process_orange} = [rectangle, rounded corners, text centered, draw = black, minimum width = 2.5cm, minimum height = 1cm, fill = orange!30]
+% \tikzstyle{process_blue} = [rectangle, rounded corners, text centered, draw = black, minimum width = 2.5cm, minimum height = 1cm, fill = blue!30]
+% \tikzstyle{process_green} = [rectangle, rounded corners, text centered, draw = black, minimum width = 2.5cm, minimum height = 1cm, fill = green!30]
+% \tikzstyle{process_purple} = [rectangle, rounded corners, text centered, draw = black, minimum width = 2.5cm, minimum height = 1cm, fill = purple!20]
+% \tikzstyle{decision}  = [diamond,shape aspect=2.5, minimum width=3cm, minimum height=1cm, inner xsep=0,text centered, draw=black, fill=red!30]
+
+% \begin{document}
+
+
+    \begin{tikzpicture}[node distance = 2cm]
+
+        \node [startstop] (start) {开始};
+
+        \node [process_blue, below of = start] (control) {理论实现};
+
+        \node [process_orange,  xshift = 7cm, yshift = 0cm] (control_total) {基于Mavros的方法实现};
+        \node [process_orange, below of = control_total](reality){控制律实现};
+        \node [process_orange, below of = control_total, xshift = -3cm](env){环境搭建};
+        \node [process_orange, below of = control_total, xshift = 3cm](ros){数据通信};
+        \node [process_orange, below of = reality](safe) {飞行安全与可实现性};
+        \begin{scope}[on background layer,label distance=1cm] 
+            \node (back_control) [draw=black!50,dashed,thick,fill=black!10,fit=(control_total) (reality) (env) (ros) (safe) ] {};
+        \end{scope}
+        \draw [arrow] (control_total.south) --++ (0,-0.5) -| (env);
+        \draw [arrow] (control_total.south) --++ (0,-0.5) -| (reality);
+        \draw [arrow] (control_total.south) --++ (0,-0.5) -| (ros);
+        \draw [arrow] (env.south) --++ (0,-0.5) -| (safe.north);
+        \draw [arrow] (reality.south) --++ (0,-0.5) -| (safe.north);
+        \draw [arrow] (ros.south) --++ (0,-0.5) -| (safe.north);
+        \draw [arrow_double] (control) -- (back_control);
+
+        \node [process_blue,below of = control, yshift = -3cm] (gazebo) {仿真验证};
+        \node [process_green, right of = gazebo, xshift = 2cm, yshift = 1cm] (map) {地图搭建};
+        \node [process_green, right of = map, xshift = 1cm] (model) {模型添加};
+        \node [process_green, right of = model, xshift = 1cm] (net) {网络接口设置};
+        \node [process_green, below of = model] (sim) {基于Gazebo的多机仿真};
+        \begin{scope}[on background layer,label distance=1cm] 
+            \node (back_gazebo) [draw=black!50,dashed,thick,fill=black!10,fit=(map) (model) (net) (sim) ] {};
+        \end{scope}
+        \draw [arrow] (map.south) --++ (0,-0.5) -| (sim);
+        \draw [arrow] (model.south) --++ (0,-0.5) -| (sim);
+        \draw [arrow] (net.south) --++ (0,-0.5) -| (sim);
+        \draw [arrow_double] (gazebo) -- (back_gazebo);
+
+        \node [decision, below of=gazebo, yshift = -1cm](dec1){是否合理？};
+
+
+        \node [process_blue,below of = dec1, yshift =0cm] (experiment) {试验试飞};
+        \node [process_purple, right of = dec1, xshift = 2cm] (heli) {试飞平台设计};
+        \node [process_purple, right of = heli, xshift = 1cm] (man) {加工制造};
+        \node [process_purple, right of = man, xshift = 1cm] (elec) {航电设计};
+        \node [process_purple, below of = elec] (single) {单机试飞};
+        \node [process_purple, left of = single, xshift = -1cm](coop) {协同吊挂}; 
+        \node [process_orange, left of = coop, xshift = -1cm] (load) {吊挂物设计};
+        \node [process_orange, below of = coop] (line) {航线设计};
+        \node [process_orange, right of = line, xshift = 1cm] (check) {安全性};
+        \draw [arrow] (heli) -- (man);
+        \draw [arrow] (man) -- (elec);
+        \draw [arrow] (elec) -- (single);
+        \draw [arrow] (single) -- (coop);
+        \draw [arrow] (load) -- (coop);
+        \draw [arrow] (check) -- (line);
+        \draw [arrow] (line) -- (coop);
+        \draw [arrow] (check) -- (single);
+        \begin{scope}[on background layer,label distance=1cm] 
+            \node (back_experiment) [draw=black!50,dashed,thick,fill=black!10,fit=(heli) (man) (elec) (single) (coop) (load) (line) (check) ] {};
+        \end{scope}
+
+        \node [decision, below of=experiment, yshift = -2cm](dec2){是否合理？};
+
+        \node [startstop, right of = dec2, xshift = 2cm] (stop) {结束};
+
+        \draw [arrow] (control) -- (gazebo);
+        \draw [arrow] (gazebo.south) --  (dec1);
+        \draw [arrow] (dec1.west) -- node[anchor = south] {否} ++ (-0.5,0) |-(control.west);
+        \draw [arrow] (dec1) -- node[anchor = east] {是} (experiment);
+        \draw [arrow] (experiment) -- (dec2);
+        \draw [arrow] (dec2) -- node[anchor = south]{是} (stop);
+        \draw [arrow] (dec2.west) -- node[anchor = south]{否} ++ (-1.5,0) |- (start);
+        \draw [arrow] (start) -- (control);
+        \draw [arrow_double] (experiment) -- (back_experiment);
+        
+    \end{tikzpicture}
+% \end{document}

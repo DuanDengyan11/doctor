@@ -1,0 +1,5 @@
+PWD e:/person/article/ddy/doctor/nuaathesis/demo_chs/fig/figure_chap7
+INPUT d:/App/texlive2019/2019/texmf.cnf
+INPUT d:/App/texlive2019/2019/texmf-dist/web2c/texmf.cnf
+INPUT d:/App/texlive2019/2019/texmf-var/web2c/xetex/xelatex.fmt
+INPUT e:/person/article/ddy/doctor/nuaathesis/demo_chs/fig/figure_chap7/conclusion7.tex

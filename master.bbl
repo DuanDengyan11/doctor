@@ -1,0 +1,229 @@
+\begin{thebibliography}{10}
+
+\bibitem{meier1988efficient}
+Meier W~H, Olson J~R.
+\newblock Efficient sizing of a cargo rotorcraft[J].
+\newblock Journal of Aircraft, 1988, 25(6):538--543.
+
+\bibitem{curtiss1985stability}
+Curtiss H, Warburton F.
+\newblock Stability and control of the twin lift helicopter system[J].
+\newblock Journal of the American Helicopter Society, 1985, 30(2):14--23.
+
+\bibitem{bernard2011autonomous}
+Bernard M, Kondak K, Maza I, et~al.
+\newblock Autonomous transportation and deployment with aerial robots for
+  search and rescue missions[J].
+\newblock Journal of Field Robotics, 2011, 28(6):914--931.
+
+\bibitem{li2014coordinated}
+Li Z, Horn J~F, Langelaan J~W.
+\newblock Coordinated transport of a slung load by a team of autonomous
+  rotorcraft[C].
+\newblock Proceedings of AIAA Guidance, Navigation, and Control Conference,
+  2014.
+\newblock  0968.
+
+\bibitem{enciu2017flight}
+Enciu J, Horn J~F.
+\newblock Flight Performance Optimization of a Multilift Rotorcraft
+  Formation[J].
+\newblock Journal of Aircraft, 2017, 54(4):1521--1538.
+
+\bibitem{berrios2019flight}
+Berrios M~G.
+\newblock Flight Dynamics and Control of Two Autonomous Helicopters Carrying an
+  External Slung Load[M].
+\newblock Stanford University, 2019.
+
+\bibitem{duan2022optimal}
+Duan D, Ding Z, Zhao H, et~al.
+\newblock Optimal hierarchical trimming method for multi-lift system with
+  helicopters considering aerodynamic interference[J].
+\newblock Aerospace Science and Technology, 2022, 128:107785.
+
+\bibitem{gassner2017dynamic}
+Gassner M, Cieslewski T, Scaramuzza D.
+\newblock Dynamic collaboration without communication: Vision-based
+  cable-suspended load transport with two quadrotors[C].
+\newblock Proceedings of 2017 IEEE International Conference on Robotics and
+  Automation (ICRA). IEEE, 2017.
+\newblock  5196--5202.
+
+\bibitem{geng2020control}
+Geng J.
+\newblock Control, Estimation and Planning for Coordinated Transport of a Slung
+  Load by a Team of Aerial Robots[D].
+\newblock The Pennsylvania State University, 2020.
+
+\bibitem{jin2022adaptive}
+Jin X, Hu Z.
+\newblock Adaptive Cooperative Load Transportation by a Team of Quadrotors With
+  Multiple Constraint Requirements[J].
+\newblock IEEE Transactions on Intelligent Transportation Systems, 2022..
+
+\bibitem{salinas2018null}
+Salinas L~R, Gimenez J, Rosales C, et~al.
+\newblock Null-space-based path-following control for cooperative payload
+  transport using multiple rotorcraft UAVs[C].
+\newblock Proceedings of 2018 International Conference on Unmanned Aircraft
+  Systems (ICUAS). IEEE, 2018.
+\newblock  631--638.
+
+\bibitem{hegde2021multi}
+Hegde A, Ghose D.
+\newblock Multi-UAV collaborative transportation of payloads with obstacle
+  avoidance[J].
+\newblock IEEE Control Systems Letters, 2021, 6:926--931.
+
+\bibitem{arab2021planning}
+Arab F, Shirazi F~A, Yazdi M~R~H.
+\newblock Planning and distributed control for cooperative transportation of a
+  non-uniform slung-load by multiple quadrotors[J].
+\newblock Aerospace Science and Technology, 2021, 117:106917.
+
+\bibitem{aliyu2022control}
+Aliyu A, El~Ferik S.
+\newblock Control of Multiple-UAV Conveying Slung Load With Obstacle
+  Avoidance[J].
+\newblock IEEE Access, 2022, 10:62247--62257.
+
+\bibitem{jackson2020scalable}
+Jackson B~E, Howell T~A, Shah K, et~al.
+\newblock Scalable cooperative transport of cable-suspended loads with UAVs
+  using distributed trajectory optimization[J].
+\newblock IEEE Robotics and Automation Letters, 2020, 5(2):3368--3374.
+
+\bibitem{howell2019altro}
+Howell T~A, Jackson B~E, Manchester Z.
+\newblock ALTRO: A fast solver for constrained trajectory optimization[C].
+\newblock Proceedings of 2019 IEEE/RSJ International Conference on Intelligent
+  Robots and Systems (IROS). IEEE, 2019.
+\newblock  7674--7679.
+
+\bibitem{sreenath2013trajectory}
+Sreenath K, Michael N, Kumar V.
+\newblock Trajectory generation and control of a quadrotor with a
+  cable-suspended load-a differentially-flat hybrid system[C].
+\newblock Proceedings of 2013 IEEE international conference on robotics and
+  automation. IEEE, 2013.
+\newblock  4888--4895.
+
+\bibitem{sreenath2013dynamics}
+Sreenath K, Kumar V.
+\newblock Dynamics, control and planning for cooperative manipulation of
+  payloads suspended by cables from multiple quadrotor robots[J].
+\newblock rn, 2013, 1(r2):r3.
+
+\bibitem{wu2014geometric}
+Wu G, Sreenath K.
+\newblock Geometric control of multiple quadrotors transporting a rigid-body
+  load[C].
+\newblock Proceedings of 53rd IEEE Conference on Decision and Control. IEEE,
+  2014.
+\newblock  6141--6148.
+
+\bibitem{kotaru2018differential}
+Kotaru P, Wu G, Sreenath K.
+\newblock Differential-flatness and control of quadrotor (s) with a payload
+  suspended through flexible cable (s)[C].
+\newblock Proceedings of 2018 Indian Control Conference (ICC). IEEE, 2018.
+\newblock  352--357.
+
+\bibitem{valentim2019multi}
+Valentim T, Cunha R, Oliveira P, et~al.
+\newblock Multi-vehicle Cooperative Control for Load Transportation[J].
+\newblock IFAC-PapersOnLine, 2019, 52(12):358--363.
+
+\bibitem{tang2015mixed}
+Tang S, Kumar V.
+\newblock Mixed integer quadratic program trajectory generation for a quadrotor
+  with a cable-suspended payload[C].
+\newblock Proceedings of 2015 IEEE international conference on robotics and
+  automation (ICRA). IEEE, 2015.
+\newblock  2216--2222.
+
+\bibitem{zeng2020differential}
+Zeng J, Kotaru P, Mueller M~W, et~al.
+\newblock Differential flatness based path planning with direct collocation on
+  hybrid modes for a quadrotor with a cable-suspended payload[J].
+\newblock IEEE Robotics and Automation Letters, 2020, 5(2):3074--3081.
+
+\bibitem{koo1999differential}
+Koo T~J, Sastry S.
+\newblock Differential flatness based full authority helicopter control
+  design[C].
+\newblock Proceedings of Proceedings of the 38th IEEE Conference on Decision
+  and Control (Cat. No. 99CH36304), volume~2. IEEE, 1999.
+\newblock  1982--1987.
+
+\bibitem{raptis2011linear}
+Raptis I~A, Valavanis K~P, Vachtsevanos G~J.
+\newblock Linear tracking control for small-scale unmanned helicopters[J].
+\newblock IEEE Transactions on control systems technology, 2011,
+  20(4):995--1010.
+
+\bibitem{zhao2021differential}
+Zhao D, Mishra S, Gandhi F.
+\newblock A Differential-Flatness-Based Approach for Autonomous Helicopter
+  Shipboard Landing[J].
+\newblock IEEE/ASME Transactions on Mechatronics, 2021, 27(3):1557--1569.
+
+\bibitem{janson2015fast}
+Janson L, Schmerling E, Clark A, et~al.
+\newblock Fast marching tree: A fast marching sampling-based method for optimal
+  motion planning in many dimensions[J].
+\newblock The International journal of robotics research, 2015, 34(7):883--921.
+
+\bibitem{gammell2018informed}
+Gammell J~D, Barfoot T~D, Srinivasa S~S.
+\newblock Informed sampling for asymptotically optimal path planning[J].
+\newblock IEEE Transactions on Robotics, 2018, 34(4):966--984.
+
+\bibitem{mellinger2011minimum}
+Mellinger D, Kumar V.
+\newblock Minimum snap trajectory generation and control for quadrotors[C].
+\newblock Proceedings of 2011 IEEE international conference on robotics and
+  automation. IEEE, 2011.
+\newblock  2520--2525.
+
+\bibitem{tordesillas2019faster}
+Tordesillas J, Lopez B~T, How J~P.
+\newblock Faster: Fast and safe trajectory planner for flights in unknown
+  environments[C].
+\newblock Proceedings of 2019 IEEE/RSJ international conference on intelligent
+  robots and systems (IROS). IEEE, 2019.
+\newblock  1934--1940.
+
+\bibitem{wang2022geometrically}
+Wang Z, Zhou X, Xu C, et~al.
+\newblock Geometrically constrained trajectory optimization for
+  multicopters[J].
+\newblock IEEE Transactions on Robotics, 2022..
+
+\bibitem{quan2022distributed}
+Quan L, Yin L, Xu C, et~al.
+\newblock Distributed swarm trajectory optimization for formation flight in
+  dense environments[C].
+\newblock Proceedings of 2022 International Conference on Robotics and
+  Automation (ICRA). IEEE, 2022.
+\newblock  4979--4985.
+
+\bibitem{ji2022real}
+Ji J, Yang T, Xu C, et~al.
+\newblock Real-Time Trajectory Planning for Aerial Perching[J].
+\newblock arXiv preprint arXiv:2203.01061, 2022..
+
+\bibitem{murray1995differential}
+Murray R~M, Rathinam M, Sluis W.
+\newblock Differential flatness of mechanical control systems: A catalog of
+  prototype systems[C].
+\newblock Proceedings of ASME international mechanical engineering congress and
+  exposition. Citeseer, 1995.
+
+\bibitem{liu1989limited}
+Liu D~C, Nocedal J.
+\newblock On the limited memory BFGS method for large scale optimization[J].
+\newblock Mathematical programming, 1989, 45(1):503--528.
+
+\end{thebibliography}

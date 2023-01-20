@@ -1,0 +1,30 @@
+\contentsline {chapter}{\numberline {第一章\hspace {.3em}}基于微分平坦的直升机协同吊挂系统实时避障轨迹规划}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}摘要}{1}{section.1.1}%
+\contentsline {section}{\numberline {1.2}引言}{1}{section.1.2}%
+\contentsline {section}{\numberline {1.3}直升机协同吊挂系统微分平坦分析}{3}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}直升机的微分平坦特性}{4}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}吊挂物建模为质点时系统的微分平坦输出特性}{6}{subsection.1.3.2}%
+\contentsline {subsection}{\numberline {1.3.3}吊挂物建模为刚体时系统的微分平坦输出特性}{7}{subsection.1.3.3}%
+\contentsline {subsection}{\numberline {1.3.4}简化}{9}{subsection.1.3.4}%
+\contentsline {section}{\numberline {1.4}基于MINCO的直升机协同吊挂系统实时避障轨迹优化方法}{9}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}基于MINCO的轨迹级表示方法}{9}{subsection.1.4.1}%
+\contentsline {subsection}{\numberline {1.4.2}基于MINCO的微分平坦输出轨迹时空形变}{11}{subsection.1.4.2}%
+\contentsline {subsection}{\numberline {1.4.3}基于MINCO的直升机协同吊挂避障问题提出}{11}{subsection.1.4.3}%
+\contentsline {subsubsection}{\numberline {1.4.3.1}最小能量惩罚函数$J_{\rm {e}}$}{12}{subsubsection.1.4.3.1}%
+\contentsline {subsubsection}{\numberline {1.4.3.2}总时间最小惩罚函数$J_{\rm {T}}$}{12}{subsubsection.1.4.3.2}%
+\contentsline {subsubsection}{\numberline {1.4.3.3}吊挂物避障惩罚函数$J_{\rm {o,L}}$}{12}{subsubsection.1.4.3.3}%
+\contentsline {subsubsection}{\numberline {1.4.3.4}吊挂物状态量可行性惩罚函数$J_{\rm {f,L}}$}{13}{subsubsection.1.4.3.4}%
+\contentsline {subsubsection}{\numberline {1.4.3.5}直升机避障惩罚函数$J_{\rm {o,H}}$}{14}{subsubsection.1.4.3.5}%
+\contentsline {subsubsection}{\numberline {1.4.3.6}直升机间避免相互碰撞惩罚函数$J_{\rm {o,d}}$}{15}{subsubsection.1.4.3.6}%
+\contentsline {subsubsection}{\numberline {1.4.3.7}吊索避障惩罚函数$J_{\rm {o,C}}$}{16}{subsubsection.1.4.3.7}%
+\contentsline {subsubsection}{\numberline {1.4.3.8}吊索力可行性惩罚函数$J_{\rm {f,C}}$}{16}{subsubsection.1.4.3.8}%
+\contentsline {subsubsection}{\numberline {1.4.3.9}控制点均匀分布惩罚函数$J_{\rm {u}}$}{17}{subsubsection.1.4.3.9}%
+\contentsline {subsubsection}{\numberline {1.4.3.10}时间约束}{18}{subsubsection.1.4.3.10}%
+\contentsline {section}{\numberline {1.5}仿真}{18}{section.1.5}%
+\contentsline {subsection}{\numberline {1.5.1}质点吊挂物仿真结果}{20}{subsection.1.5.1}%
+\contentsline {subsection}{\numberline {1.5.2}刚体吊挂物仿真结果}{22}{subsection.1.5.2}%
+\contentsline {section}{\numberline {1.6}本章小结}{23}{section.1.6}%
+\contentsline {chapter}{参考文献}{27}{section*.17}%
+\contentsline {chapter}{致谢}{30}{appendix*.19}%
+\contentsline {chapter}{在学期间的研究成果及学术论文情况}{31}{appendix*.20}%
+\contentsfinish 

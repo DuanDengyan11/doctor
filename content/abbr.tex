@@ -1,0 +1,85 @@
+% 注释表和缩略词，硕博论文用。
+% 《要求》没有规定内容格式，按照自己的喜好来改吧。
+% 注意，表格里的文字不要太长哦。
+
+\chapter*{注释表}
+
+\noindent\begin{tabu} to \textwidth {|X[l]|p{4.5cm}|X[l]|p{4.5cm}|}\hline
+$a$ & 加速度绝对值 & $\boldsymbol{a}$ & 加速度 \\ \hline
+$\boldsymbol{b}$ & 由$\boldsymbol{D}_0, \boldsymbol{D}_i, \boldsymbol{D}_M$构成的矩阵 & $\boldsymbol{c}_i \,\, i\in\{1,\cdots,M\}$ & 第$i$段微分平坦输出轨迹的分段数 \\ \hline
+$d$ & 距离 & $d(\cdot)$ & 位置$(\cdot)$到障碍物的距离 \\ \hline
+$\nabla  \boldsymbol{d}(\cdot)$ & 距离梯度 & $\boldsymbol{D}_0$ & 初始边界条件对应的导数值 \\ \hline
+$\boldsymbol{D}_{M}$ & 终止边界条件对应的导数值 & $\boldsymbol{D}_i$ & 第$i$个中间边界条件对应的导数值 \\ \hline
+$e$ & 吊索上的第$e$个离散点 & $\boldsymbol{e}_i \in \mathbb{R}^3$ & 第$i$个元素为1的单位向量  \\ \hline
+E & 吊索离散点数 & $\boldsymbol{E}_0, \boldsymbol{E}_i, \boldsymbol{F}_0, \boldsymbol{F}_i$ & 由多项式的基及其导数构成的矩阵 \\ \hline
+$f$ & 普通函数 & & \\ \hline
+$\boldsymbol{F}$ & 合力 & $g$ & 重力加速度 \\ \hline
+$\boldsymbol{h}_n $ & 吊挂物重心指向第$n$个吊挂点的向量在吊挂物体轴系中的表示 &
+$\boldsymbol{I}\in \mathbb{R}^{3 \times 3}$ & 三维单位矩阵 \\ \hline
+$J_{\rm{e}}$ & 最小能量惩罚函数 & $J_{\rm{f,C}}$ & 吊索力可行性约束惩罚函数 \\ \hline
+$J_{\rm{f,L}}$ & 吊挂物状态量可行性惩罚函数 & $J_{\rm{o,C}}$ & 吊索避障惩罚函数 \\ \hline
+$J_{\rm{o,d}}$ & 直升机间避免相互碰撞惩罚函数 &  $J_{\rm{o,H}}$ & 直升机避障惩罚函数 \\ \hline
+$J_{\rm{o,L}}$ & 吊挂物避障惩罚函数 & $J_{\rm{T}}$ & 总时间最小惩罚函数  \\ \hline
+$J_{\rm{u}}$ &控制点均匀分布惩罚函数 & $\boldsymbol{J}$ & 以重心为原点关于体轴系的惯量张量矩阵 \\ \hline
+$k_i$ & 第$i$段微分平坦输出轨迹离散数 & $L_n$ & 第$n$根吊索长度  \\ \hline
+$m$ & 质量 & $M$ & 微分平坦输出轨迹分段数 \\ \hline
+$\boldsymbol{M}$ & 合力矩 & $\boldsymbol{M}$ & 由 $\boldsymbol{E}_0, \boldsymbol{E}_i, \boldsymbol{F}_0, \boldsymbol{F}_i$构成的矩阵 \\ \hline
+$N$ & 协同吊挂系统的直升机个数 & & \\ \hline
+$\boldsymbol{p}_i$ & 第$i$段微分平坦输出轨迹 & $\boldsymbol{q}_i \,\, i\in\{1,\cdots,M-1\}$ & 微分平坦输出轨迹的第$i$个中间点 \\ \hline
+\end{tabu}
+
+\noindent\begin{tabu} to \textwidth {|X[l]|p{4.5cm}|X[l]|p{4.5cm}|}\hline
+$\boldsymbol{q}_n$ & 吊挂物上吊挂点指向直升机$n$上吊挂点的单位向量在吊挂物体轴系中的表示 & $\boldsymbol{q}_z$ & 倾斜四元数 \\ \hline
+$\boldsymbol{q}_{\psi}$ & 偏航四元数 & $\boldsymbol{r}$ & 地轴系下的重心位置 \\ \hline
+$\boldsymbol{R}$ & 机身姿态 & $t$ & 当前时刻 \\ \hline
+$t_0$ & 初始时刻 & $t_i$ & 第$i$段微分平坦输出轨迹的终止时刻 \\ \hline
+$t_{\rm{M}}$ & 终止时刻 & $T$ & 旋翼拉力  \\ \hline
+$T_i \,\, i \in \{1,\cdots,M\}$ & 第$i$段微分平坦输出轨迹的时长 & $T_n \,\,\,\, n\in\{1,2,\cdots,N\}$ & 吊索$n$上的力 \\ \hline
+$T_n\boldsymbol{q}_n$& 吊挂物体轴系下吊索$n$的力 & $T_{\sum}$ & 微分平坦输出轨迹总时长 \\ \hline
+$\boldsymbol{u}$ & 输入量向量 & $\boldsymbol{U}$ & 以$\Phi$的零空间的基为列向量扩张成的矩阵 \\ \hline
+$\boldsymbol{v}$ & 地轴系下的平动速度 & $\boldsymbol{W}$ & 权重矩阵 \\ \hline
+$\mathcal{W}, \mathcal{K}$ & 代价惩罚函数 & $\boldsymbol{x}$ & 状态量向量 \\ \hline
+$\dot{\boldsymbol{x}}$ & 状态量向量的导数 & $x_{\rm{e}}y_{\rm{e}}z_{\rm{e}}$ & 地轴系 \\ \hline
+$x_{\rm{L}}y_{\rm{L}}z_{\rm{L}}$ & 吊挂物体轴系 & $x_{n\rm{b}}y_{n\rm{b}}z_{n\rm{b}}$ & 直升机$n$的体轴系 \\ \hline
+$\boldsymbol{z}$ & 微分平坦输出 & $\boldsymbol{z}^{[s]}$ & $\boldsymbol{z}$到其$s$阶导数的堆叠 \\ \hline
+$\bar{\boldsymbol{z}}_0$ & 微分平坦输出初始边界条件 & $\bar{\boldsymbol{z}}_f$ &微分平坦输出末尾边界条件 \\ \hline
+$\bar{\boldsymbol{z}}_i$ & 微分平坦输出的中间条件 & & \\ \hline
+$\alpha_n$ & $T_n\boldsymbol{q}_n$与$-z_{\rm{L}}$轴的夹角 & $\beta_n$ & $T_n\boldsymbol{q}_n$在$x_{\rm{L}}y_{\rm{L}}$平面的投影与$x_{\rm{L}}$轴的夹角 \\ \hline
+$\boldsymbol{\beta}$ & 多项式的基 & $\Gamma_{\rm{MINCO}}$ & 基于MINCO的多项式轨迹 \\ \hline
+$\bar{\omega}_j$ & 正交系数 & $\boldsymbol{\omega}$ & 机体角速度  \\ \hline
+$\lambda_{\rm{e}}$ & 最小能量惩罚函数权重 & $\lambda_{\rm{f,C}}$ & 吊索力可行性约束惩罚函数权重 \\ \hline 
+$\lambda_{\rm{f,L}}$ & 吊挂物状态量可行性惩罚函数权重 & $\lambda_{\rm{o,C}}$ & 吊索避障惩罚函数权重 \\ \hline
+$\lambda_{\rm{o,d}}$ & 直升机间避免相互碰撞惩罚函数权重 & $\lambda_{\rm{o,H}}$ & 直升机避障惩罚函数权重 \\ \hline 
+$\lambda_{\rm{o,L}}$ & 吊挂物避障惩罚函数权重 & $\lambda_{\rm{T}}$ & 总时间最小惩罚函数权重  \\ \hline
+$\lambda_{\rm{u}}$ &控制点均匀分布惩罚函数权重 & $\boldsymbol{\lambda}$ & 各惩罚函数权重向量  \\ \hline
+$\Lambda \in \mathbb{R}^{3N - 6}$ & 与吊索力相关的系数向量 & $\partial$ & 求偏导 \\ \hline 
+$\Phi$ & 各吊索力到吊索合力、合力矩的转换矩阵 & $\psi$ & 偏航角 \\ \hline
+$\mathbb{R}$ & 实数集 & & \\ \hline
+\end{tabu}
+
+\noindent\begin{tabu} to \textwidth {|X[l]|p{4.5cm}|X[l]|p{4.5cm}|}\hline
+上标$\rm{T}$ & 转置 & 上标$+$ & Moore-Penrose 广义逆 \\ \hline
+上标$(k)$ & $k \in \mathbb{R}$，$k$阶导 & 下标${\rm{A}}1$ & 动力部件产生的气动力 \\ \hline
+下标${\rm{A}}2$ & 除动力部件外其他部件产生的气动力 & 下标$\rm{b}$ & 体轴系  \\ \hline
+下标$\rm{C}$ & 吊索 & 下标$\rm{d}$ & 距离  \\ \hline
+下标$e$ & 地轴系 & 下标$\rm{H}$ & 直升机  \\ \hline
+下标$\rm{L}$ & 吊挂物 & 下标$\max$ & 最大值 \\ \hline
+下标$\min$ & 最小值 & 下标$n$ & 第$n$个直升机或第$n$个吊索 \\ \hline
+下标$\rm{safe}$ & 安全值 & & \\ \hline
+$\mathcal{DN}(\cdot)$ & 函数$\mathcal{DN}(\cdot) = \frac{1}{\|(\cdot)\|} (\boldsymbol{I} - \frac{(\cdot)(\cdot)^{\rm{T}}}{(\cdot)^{\rm{T}}(\cdot)})$ & $E[(\cdot)]$ & $(\cdot)$的期望 \\ \hline
+$\mathcal{N}(\cdot)$ & $\mathcal{N}(\cdot) = \frac{(\cdot)}{\| (\cdot) \|}$ & $\mathcal{R}_{\rm{quat}}(\cdot)$ & 四元数到姿态矩阵的转换函数 \\ \hline
+$Tr\{(\cdot)\}$ & $(\cdot)$的迹 & $\left\| (\cdot) \right\|$ & $(\cdot)$的欧几里得范数 \\ \hline
+$(\cdot)_{(a_1:a_2, a_3:a_4)}$ & 矩阵$(\cdot)$的第$a_1$到$a_2$行、第$a_3$到$a_4$列 & $(\cdot)_{(a_1:a_2,:)}$ & 矩阵$(\cdot)$的第$a_1$到$a_2$行 \\ \hline
+$(\cdot)_{(:,a_3:a_4)}$ & 矩阵$(\cdot)$的第$a_3$到$a_4$列 & $\hat{(\cdot)}$ & 三维向量$(\cdot)$的反对称矩阵 \\ \hline
+\end{tabu}
+
+\chapter*{缩略词}
+
+\noindent\begin{tabu} to \textwidth {|X[1,c]|X[4,c]|}\hline
+缩略词 & 英文全称 \\ \hline
+ADMM & Alternating Direction Method of Multiplier \\ \hline
+ALTRO & Augmented Lagrangian TRajectory Optimizer \\ \hline
+ESDF & Euclidean Signed Distance Field \\ \hline
+MINCO & Control effort minimizer \\ \hline
+
+\end{tabu}

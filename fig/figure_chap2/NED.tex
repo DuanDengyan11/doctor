@@ -1,0 +1,27 @@
+% \documentclass{article}
+% \usepackage{xeCJK}
+% \usepackage{tikz}
+% \usetikzlibrary{decorations.pathreplacing, calligraphy}
+% \usetikzlibrary{quotes,angles}
+% \begin{document}
+\begin{tikzpicture}
+    \node at (0,0) {\includegraphics[width = 7cm]{multi_lift.PNG}};
+    \draw[-latex] (-2,-2) -- (-3.7,-2) node[above] {飞行方向}; 
+    \draw[-latex] (5,-2.5) -- (4,-2.5) node[above] {$X_e$};
+    \draw[-latex] (5,-2.5) -- (5.5,-2) node[above] {$Y_e$}; 
+    \draw[-latex] (5,-2.5) -- (5,-3.5) node[left] {$Z_e$}; 
+    \draw (5,-2.5) node[right, yshift = -0.2cm]{$O_e$};
+
+    \draw[-latex] (0.4,-3.25) -- (-0.5,-3.25) node[below] {$X_{ev,l}$};
+    \draw[-latex] (0.4,-3.25) -- (0.9,-2.5) node[left] {$Y_{ev,l}$}; 
+    \draw[-latex] (0.4,-3.25) -- (0.4,-4) node[left] {$Z_{ev,l}$}; 
+    \draw (0.4,-3.25) node[right, yshift = -0.2cm]{$O_{ev,l}$};
+
+    \draw[-latex] (1.2,1.95) -- (0.5,1.95) node[below] {$X_{ev,1}$};
+    \draw[-latex] (1.2,1.95) -- (1.7,2.4) node[left] {$Y_{ev,1}$}; 
+    \draw[-latex] (1.2,1.95) -- (1.2,1.2) node[right] {$Z_{ev,1}$}; 
+    \draw (1.2,1.95) node[right, yshift = -0.2cm]{$O_{ev,1}$};
+
+\end{tikzpicture}  
+
+% \end{document}

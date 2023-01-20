@@ -1,0 +1,6 @@
+PWD f:/person/article/ddy/doctor/nuaathesis/demo_chs/fig/figure_chap2
+INPUT c:/texlive/2019/texmf.cnf
+INPUT c:/texlive/2019/texmf-dist/web2c/texmf.cnf
+INPUT c:/texlive/2019/texmf-var/web2c/xetex/xelatex.fmt
+INPUT f:/person/article/ddy/doctor/nuaathesis/demo_chs/fig/figure_chap2/OXYZbl.tex
+OUTPUT f:/person/article/ddy/doctor/nuaathesis/demo_chs/fig/figure_chap2/OXYZbl.log

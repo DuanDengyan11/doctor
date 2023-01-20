@@ -1,0 +1,22 @@
+% \documentclass{article}
+% \usepackage{xeCJK}
+% \usepackage{tikz}
+% \usetikzlibrary{decorations.pathreplacing, calligraphy}
+% \usetikzlibrary{quotes,angles}
+% \begin{document}
+\begin{tikzpicture}
+    \node at (0,0) {\includegraphics[width = 3cm]{blade1.png}};
+    \draw[-latex](-1.5,-0.85)--(2,-0.85) node[below]{$X_r$};
+    \draw[-latex](-1.5,-0.85)--(-1.5,1) node[above]{$Z_r$};
+    \draw[-latex](-1.5,-0.85)--(1.8,1.25) node[above]{$X_{bl}$};
+    \draw[-latex](-1.5,-0.85)--(-2.6,1) node[left]{$Z_{bl}$};
+    \draw 
+    (2,-0.85)coordinate(a)
+    (-1.5,-0.85)coordinate(b)
+    (1.8,1.25)coordinate(c)
+    pic["$\beta_{bl}$", draw=orange, ->, angle eccentricity=1.2, angle radius=1.5cm]
+    {angle=a--b--c};
+
+\end{tikzpicture}  
+
+% \end{document}
