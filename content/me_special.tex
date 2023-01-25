@@ -229,7 +229,6 @@ $\boldsymbol{F}_{{\rm{C}},n}$至其二阶导可以写为：
         \right]
      + \boldsymbol{U\Lambda}
 \end{equation}
-
 其中，$\boldsymbol{\Lambda} \in \mathbb{R}^{3N-6}$。可以看出，若知$\boldsymbol{\Lambda}$及其高阶项，可得$T_n\boldsymbol{q}_n$及其高阶项。因此，将$\boldsymbol{\Lambda}$写入协同吊挂系统的微分平坦输出。
 
 与\ref{point_load_flatness}节类似，将$\psi_n$写入系统的微分平坦输出后，要得到直升机$n$的所有状态和控制输入，仍需要得知$\boldsymbol{r}_n$至其四阶导、$\boldsymbol{F}_{{\rm{C}},n}$至其二阶导的值。
@@ -293,7 +292,7 @@ $\boldsymbol{F}_{{\rm{C}},n}$至其二阶导可以写为：
         \,\,\,\,\,\,\,\,\,\,\,  t_{i-1} < t_i, \,\,\,\, 1 \le i \le M
     \end{array}
 \end{equation}
-其中，$\boldsymbol{W}\in \mathbb{R}^{m\times m}$为权重，时间区间$[t_0, t_M]$被分为$M$段。$\bar{\boldsymbol{z}}_0, \bar{\boldsymbol{z}}_f \in \mathbb{R}^{ms}$ 分别为微分平坦输出的初始、末尾边界条件。中间条件$\bar{\boldsymbol{z}}_i \in \mathbb{R}^{md_i}$规定了$t_i$时刻微分平坦输出到其$d_i$阶导数的具体值，其中$d_i \le s$。。
+其中，$\boldsymbol{W}\in \mathbb{R}^{m\times m}$为权重，时间区间$[t_0, t_M]$被分为$M$段。$\bar{\boldsymbol{z}}_0, \bar{\boldsymbol{z}}_f \in \mathbb{R}^{ms}$ 分别为微分平坦输出的初始、末尾边界条件。中间条件$\bar{\boldsymbol{z}}_i \in \mathbb{R}^{md_i}$规定了$t_i$时刻微分平坦输出到其$d_i$阶导数的具体值，其中$d_i \le s$。
 
 \textbf{最优性充要条件：}轨迹$\boldsymbol{z}^*(t):\,\,[t_0,t_M] \mapsto \mathbb{R}^m$为式\ref{optimization_minco}的最优解，当且仅当下述条件成立：
 \begin{enumerate}
@@ -492,7 +491,7 @@ ${\partial J_{\rm{e}}}/{\partial \boldsymbol{c}_i}  = 2\boldsymbol{Q}\left(T_i\r
             \right\}$。
 
 \subsubsection{总时间最小惩罚函数$J_{\rm{T}}$}
-为使微分平坦输出在满足约束的情况下，在最短时间内达到目标状态，设置总时间最小惩罚函数$J_{\rm{T}} = T_{\sum}$，关于$\boldsymbol{c}_i$、$T_i$微分可得，${\partial J}/{\partial \boldsymbol{c}_i} = \boldsymbol{0}$、 ${\partial J}/、、、、、、、、、{\partial T_i} = 1$。
+为使微分平坦输出在满足约束的情况下，在最短时间内达到目标状态，设置总时间最小惩罚函数$J_{\rm{T}} = T_{\sum}$，关于$\boldsymbol{c}_i$、$T_i$微分可得，${\partial J}/{\partial \boldsymbol{c}_i} = \boldsymbol{0}$、 ${\partial J}/{\partial T_i} = 1$。
 \subsubsection{吊挂物避障惩罚函数$J_{\rm{o,L}}$}
 定义第$i$段微分平坦输出对应第$j$个采样点时的吊挂物位置${\boldsymbol{r}}_{{\rm{L}},i,j}$。采用欧氏符号距离场ESDF（Euclidean Signed Distance Field）计算吊挂物据障碍物的距离，$d(\cdot)$表示距离，$\nabla \boldsymbol{d}(\cdot)$表示距离梯度。
 
